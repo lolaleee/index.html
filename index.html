@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QR Code Generator</title>
+
+  <!-- This line connects your page to a QR code library -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+</head>
+
+<body>
+  <h2>My QR Code</h2>
+
+  <!-- This empty box is where the QR code will appear -->
+  <div id="qrcode"></div>
+
+  <script>
+    /* This code creates the QR code */
+    new QRCode(document.getElementById("qrcode"), {
+      text: "https://github.com",
+      width: 200,
+      height: 200
+    });
+  </script>
+</body>
+</html>
