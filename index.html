@@ -1,21 +1,22 @@
-<!DOCTYPE html>
+
+   <!DOCTYPE html>
 <html>
 <head>
   <title>QR Code Generator</title>
 
-  <!-- This line connects your page to a QR code library -->
+  <!-- file:///C:/Users/pc/Downloads/Dami.pdf -->
   <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
 </head>
 
 <body>
-  <h2>file:///C:/Users/pc/Downloads/Dami.pdf</h2>
+  <h2>My QR Code</h2>
 
   <!-- This empty box is where the QR code will appear -->
-  <div id="file:///C:/Users/pc/Downloads/Dami.pdf"></div>
+  <div id="qrcode"></div>
 
   <script>
     /* This code creates the QR code */
-    new QRCode(document.getElementById("file:///C:/Users/pc/Downloads/Dami.pdf"), {
+    new QRCode(document.getElementById("qrcode"), {
       text: "https://github.com",
       width: 200,
       height: 200
